@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="bg" prefHeight="523.0" prefWidth="500.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="dark-blue" layoutX="25.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="174.0" stylesheets="@application.css" text="Main Menu" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="dark-blue" fx:id="wb1" alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="80.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="Algonquin College">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="dark-blue" layoutX="173.0" layoutY="250.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="FAQs">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="dark-blue" layoutX="173.0" layoutY="138.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="FAQs">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button id="dark-blue" layoutX="173.0" layoutY="195.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="FAQs">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
