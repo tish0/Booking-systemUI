@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="bg" prefHeight="523.0" prefWidth="500.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="bg" prefHeight="523.0" prefWidth="500.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.App">
    <children>
       <Button id="dark-blue" layoutX="25.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="174.0" stylesheets="@application.css" text="Main Menu" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0">
          <cursor>
@@ -19,37 +19,61 @@
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Button>
-      <Button id="dark-blue" fx:id="wb1" alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="80.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="Algonquin College">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button id="dark-blue" layoutX="173.0" layoutY="250.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="FAQs">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button id="dark-blue" layoutX="173.0" layoutY="138.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="FAQs">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Button>
-      <Button id="dark-blue" layoutX="173.0" layoutY="195.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="FAQs">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="Arial Bold" size="18.0" />
-         </font>
-      </Button>
+      <GridPane id="grid" alignment="CENTER" layoutY="47.0" prefHeight="316.0" prefWidth="500.0" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="dark-blue" fx:id="wb1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openWeb1" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="Algonquin College" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button id="dark-blue" fx:id="wb2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openWeb2" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="Career" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button id="dark-blue" fx:id="wb3" mnemonicParsing="false" onAction="#openWeb3" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="News" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button id="dark-blue" fx:id="wb4" mnemonicParsing="false" onAction="#openWeb4" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="About" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button id="dark-blue" fx:id="wb5" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openWeb5" prefHeight="41.0" prefWidth="193.0" stylesheets="@application.css" text="Programs" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
    </children>
 </AnchorPane>
