@@ -19,8 +19,8 @@ public class App extends Application {
 	        "http://www.algonquincollege.com/careers/career-opportunities/",
 	        "http://www.algonquincollege.com/a-z/#news",
 	        "http://www.algonquincollege.com/about/",
-	        "http://www.algonquincollege.com/future-students/programs/"
-	        
+	        "http://www.algonquincollege.com/future-students/programs/",
+	        "http://www.algonquincollege.com/future-students/"
 	    };
 	
 	
@@ -34,6 +34,10 @@ public class App extends Application {
 	private Button wb4; 
 	@FXML
 	private Button wb5; 
+	@FXML
+	private Button wb6; 
+	@FXML
+	private Button wb7; 
 	@FXML
 	public void openWeb1(ActionEvent event) {
 		wb1.setOnAction((ActionEvent e) -> {
@@ -62,6 +66,12 @@ public class App extends Application {
 	public void openWeb5(ActionEvent event) {
 		wb5.setOnAction((ActionEvent e) -> {
             services.showDocument(urls[4]);
+            
+        });}
+	@FXML
+	public void openWeb6(ActionEvent event) {
+		wb6.setOnAction((ActionEvent e) -> {
+            services.showDocument(urls[5]);
             
         });}
 	
